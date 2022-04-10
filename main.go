@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/spf13/viper"
+)
 
 func main() {
-	fmt.Println("init")
+	fmt.Println(viper.GetString("test-var"))
 }
